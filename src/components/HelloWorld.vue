@@ -1,35 +1,23 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+  import { ref } from 'vue'
 
-defineProps<{ msg: string }>()
+  defineProps<{ msg: string }>()
 
-const count = ref(0)
+  const count = ref(0)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1 class="text-center">{{ msg }}</h1>
 
   <div id="boton">
     <button type="button" @click="count++">contador es {{ count }}</button>
     <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
+      Este es el componente HelloWord.
     </p>
   </div>
-
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
-  </p>
-  <p>
-    Install
-    <a href="https://github.com/vuejs/language-tools" target="_blank">Volar</a>
-    in your IDE for a better DX
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
-  <p>AQUI VA EL COMPONENTE VCARD DE VUETIFY</p>
+  <br><hr><br>
+  <p class="text-center">AQUI VA EL COMPONENTE VCARD DE VUETIFY</p>
+  <br>
   <div class="vuetif">
     <v-card
       class="mx-auto"
@@ -41,26 +29,26 @@ const count = ref(0)
         src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
         cover
       >
-        <v-card-title>Top 10 Australian beaches</v-card-title>
+        <v-card-title>Lindas Playas</v-card-title>
       </v-img>
 
       <v-card-subtitle class="pt-4">
-        Number 10
+        Playa Número 13
       </v-card-subtitle>
 
       <v-card-text>
-        <div>Whitehaven Beach</div>
+        <div>La Lisera</div>
 
-        <div>Whitsunday Island, Whitsunday Islands</div>
+        <div>Arica - Chile</div>
       </v-card-text>
 
       <v-card-actions>
         <v-btn color="orange">
-          Share
+          Compartir
         </v-btn>
 
         <v-btn color="orange">
-          Explore
+          Más Detalles
         </v-btn>
       </v-card-actions>
     </v-card>
